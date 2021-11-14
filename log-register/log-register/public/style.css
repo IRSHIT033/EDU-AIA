@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+  
+    
+}
+.weather-analyser{
+    height: 500px;
+    width: 550px;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#3895D3;
+}
+.row{
+    margin: 0;
+}
+.main_header{
+height: auto;
+}
+.main_menu{
+    background-color: grey;
+}
+.navbar{
+  
+    color: grey;
+    background-color: var(--main-color);
+    padding: 2rem 0;
+}
+.navbar a{
+    color:#fff;
+    font-size: 1.8rem;
+}
+.navbar-toggler .collapsed{
+color: #fff;
+}
+.navbar-toggler{
+    color: #fff;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+.main_header_left{
+    height:55.69rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+   font-size: 2rem;
+}
+.main_header_right{
+    height:55.69rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+   font-size: 2rem;
+}
+.main_header_left button{
+font-size: 1.3rem;
+}
+.main_header_left span{
+    color:var(--main-color);
+}
+.main_header_left h1{
+    font-size: 4rem;
+}
+.main_header_left button{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size:1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: -1px 8px 6px -6px #000;
+    background-color: grey;
+    color: #fff;
+}
+.main_header_left button:focus{
+    box-shadow: none;
+}
+footer{
+    height: 11vh;
+    text-align: center;
+    width:100%;
+    background-color: var(--main-bg);
+    margin-top:auto ;
+    color: #fff;
+    line-height: 11vh;
+    font-size: 1.3rem;
+}
+@media(max-width:499px){
+    body{
+        overflow-y: auto;
+    }
+
+    .main_header_left{
+        height: 32vh;
+        text-align: center;
+    }
+    .main_header_left p{
+        margin: 0 auto;
+
+    }
+    .main_header_left button{
+        margin: 0 11rem;
+       
+    }
+    .main_header_right img{
+        height: 400px;
+        width: 400px;
+      
+    }
+}
+.ERROR{
+    width:100vw;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+    background-color: #1e272e;
+    font-size: 5rem;
+    line-height: 100vh;
+}
+.tempInformation{
+    width:100%;
+    
+    min-height:20rem;
+    background-color:#323544;
+    border-radius:1rem;
+    padding:1rem;
+    font-family: sans-serif;
+    
+}
+.tempInformation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    color: #fff;
+}
+ #temp_status{
+   margin: 0 auto;
+    height:100px;
+    width:100px;
+} 
+.middle_layer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.new_content{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    border-radius: 10px;
+    
+    background-color: #323544;
+    color: #fff;
+    height: 35rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  
+}
+.temp_form{
+
+ margin: 2rem 8rem;
+}
+
+
+.temp_form input[type="text"]{
+    margin-left:2rem;
+    margin-right: 2rem;
+    width: 30rem;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #323544;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+.search_btn{
+    color: #fff;
+    background-color: grey;
+   position: relative;
+    outline: none;
+    left: -15%;
+    top:0.4rem;
+    padding: 2.5rem;
+    border: none;
+    border-radius: 55px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.search_btn:focus{
+    box-shadow: none;
+    
+}
+@media(max-width:499px){
+    .search_btn{
+       
+        left: 25rem;
+    top:-7.2rem;   
+    }
+    .temp_form{
+
+        margin: 0 ;
+       }
+}
+.City{
+    font-size:4em;
+}
+.card{
+    height: auto;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    animation-name: float;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes float {
+	0% {
+	transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+        }
+    100% {
+            transform: translateY(0px);
+            }    
+}

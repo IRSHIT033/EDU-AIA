@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/83b91b9c26.js"></script>
+    <title>Education Meeting HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons"id="login-register">
+            <ul>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ** Header Area Start ** -->
+  <header class="header-area " style="background-color: #80083c">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ** Logo Start ** -->
+                      <a href="/index" class="logo">
+                          Edu AIA
+                      </a>
+                      <!-- ** Logo End ** -->
+                      <!-- ** Menu Start ** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                          
+                          <li>
+                          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IKrOhoGMEHWf77" async> </script> </form>
+                         </li>
+                      </ul>
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ** Menu End ** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+
+
+
+  <section id="info">
+    <div class="row">
+      {{#each list}}
+      <div class="card">
+        <h2>{{Name}}</h2>
+        <h1>{{Qualification}}</h1>
+        <div class="content-img">
+          <h1>{{Topic}}</h1>
+        <img src={{File}} alt="" srcset="">
+      
+        <span>{{{Article}}}</span>
+       
+      </div>
+      <span class="date">{{Date}}</span>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+</body>
+</html>
